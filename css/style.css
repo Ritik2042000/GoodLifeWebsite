@@ -1,0 +1,1219 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url(./fonts/Oswald/Oswald-VariableFont_wght.ttf);
+    /* font-weight: bold; */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brandon';
+    src: url(./fonts/brandon/Brandon_bld.otf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url(./fonts/Lato/Lato-Regular.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(./fonts/Poppins/Poppins-Regular.ttf);
+    /* font-weight: bold; */
+    font-style: normal;
+}
+
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald';
+    font-size: 13px;
+    color: #333;
+    margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+    line-height: 1
+}
+
+a {
+    text-decoration: none !important;
+    outline: none;
+    /* color: #f58020; */
+}
+
+a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: top;
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
+
+
+.wrapper {
+    margin: 0 auto;
+    padding: 0 50px;
+    max-width: 1300px;
+    /*1200px*/
+}
+
+/* custom css */
+.section-padding {
+    padding: 80px 0;
+}
+
+.bg-header {
+    background-color: #263c88;
+}
+
+.text-des {
+    font-family: 'Brandon';
+    font-size: 40px;
+    letter-spacing: 8px;
+    color: #e19a00;
+    font-weight: bold;
+    padding-right: 90px;
+}
+
+.chang-clr {
+    color: #fff;
+}
+
+.nav-link {
+    color: #fff !important;
+    text-transform: uppercase;
+}
+
+.navbar-nav li a {
+    position: relative;
+}
+
+.navbar-nav li a:hover {
+    color: #e19a00 !important;
+}
+
+.navbar-nav li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    border-bottom: 3px solid #e19a00;
+    /* box-shadow: 3px 3px 3px #e19a00; */
+    position: absolute;
+    left: 5%;
+    top: 100%;
+    transform: translate(1%);
+    transition: width 0.4s;
+}
+
+.navbar-nav li a:hover::after {
+    width: 90%;
+}
+
+.logo {
+    top: -35%;
+}
+
+.logo img {
+    width: 80% !important;
+}
+
+/* <--------section1-------------> */
+.bg_sec-1 {
+    background-image: url(../images/Main\ bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 100%;
+}
+
+.info {
+    margin: 0 auto;
+    font-size: 80px;
+    line-height: 90px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Oswald";
+}
+
+.bg_clr {
+    background-color: #f2f2f2;
+}
+
+.btn-clr {
+    background-color: #e19a00;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.hov-effect:hover {
+    background-color: #fff;
+    border: 1px solid #e19a00;
+
+}
+
+.rev-pad {
+    padding: 20px;
+}
+
+.sign-up {
+    font-size: 28px;
+    letter-spacing: 1px;
+    line-height: 42px;
+    color: #000000;
+    font-weight: 500;
+    font-family: "Oswald";
+}
+
+
+/* <-------section2-------------> */
+.lorem {
+    font-family: "Oswald";
+}
+
+.lorem h3 {
+    width: 450px;
+    font-size: 60px;
+    line-height: 70px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 500;
+}
+
+.lorem p {
+    width: 513px;
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 35px;
+    color: #707070;
+    font-weight: 300;
+}
+
+/* <-------section3-------------> */
+.fa-arrow-right {
+    padding: 0 15px 0 0;
+}
+
+.life_coach {
+    font-family: 'Oswald';
+}
+
+.life_coach h3 {
+    font-size: 55px;
+    line-height: 90px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 500;
+}
+
+.life_coach p {
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 25px;
+    color: #707070;
+    font-weight: 300;
+}
+
+
+/* <-------section4-------------> */
+.wrapper-card {
+    width: 1480px;
+    margin: 0 auto;
+}
+
+.bg-card {
+    background-color: #428ef7;
+}
+
+.cust-card {
+    /* width: 33%; */
+    padding: 25px 0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.cust-card img {
+    transition: all 0.3s;
+    transform: scale(0.8);
+}
+
+.cust-card:hover.cust-card img {
+    transform: scale(1);
+}
+
+.card-title {
+    width: 80%;
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 46px;
+    color: #ffffff !important;
+    font-weight: 500;
+    font-family: "Oswald";
+    text-align: center;
+    margin: 0 auto;
+}
+
+.card-text {
+    width: 75%;
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 35px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Oswald";
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* <-------section5-------------> */
+.card3 {
+    width: 950px;
+    margin: 0 auto;
+}
+
+.slider_img {
+    padding: 15px 0;
+}
+
+.slider_contents p {
+    font-size: 28px;
+    letter-spacing: 1px;
+    line-height: 45px;
+    color: #707070;
+    font-weight: 300;
+    font-family: "Oswald";
+    text-align: center;
+    padding: 20px 0;
+}
+
+.custmor {
+    font-size: 23px;
+    letter-spacing: 0px;
+    line-height: 45px;
+    color: #707070;
+    font-family: "Oswald";
+    text-align: center;
+}
+
+.custmor span {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    color: #000;
+}
+
+.carousel-indicators {
+    /* position: fixed; */
+    bottom: -41px !important;
+}
+
+.dots-clr {
+    background-color: #000 !important;
+}
+
+/* <-------section5-------------> */
+.change_life {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Oswald";
+}
+
+.change_life h4 {
+    font-size: 45px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    padding: 20px 0;
+}
+
+.change_life p {
+    font-size: 28px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    padding: 20px 0;
+}
+
+.button {
+    padding: 20px 0;
+}
+
+.button a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 25px;
+    color: #fff;
+    background-color: #e19a00;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+}
+
+.button a:hover {
+    background-color: #fff;
+    color: #e19a00;
+    border: 1px solid #e19a00;
+}
+
+/* <------footer-------> */
+
+.clr_hr {
+    background-color: #263c88;
+    border: 1px solid #263c88;
+    opacity: 1;
+}
+
+.quick_links {
+    font-family: 'Poppins';
+}
+
+.quick_links ul {
+    padding: 0;
+}
+
+.quick_links li {
+    list-style: none;
+    padding: 8px 0;
+}
+
+.quick_links ul li a {
+    color: #000;
+    transition: all 0.3s;
+}
+
+.quick_links li a:hover {
+    color: #2876e4;
+}
+
+.quick_links li a:hover .fa-arrow-right {
+    font-weight: 800;
+}
+
+.blog {
+    width: 100%;
+}
+
+.blog_img {
+    width: 100%;
+}
+
+.social-icons i {
+    display: inline-block;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 0px 5px;
+    /* border-radius: 100%; */
+    transition: all 0.3s;
+}
+
+.social-icons i:hover {
+    transform: scale(1.5);
+}
+
+/* <----------Life Certification------------> */
+
+/* <-------page1-section1---------> */
+.bg_sec-1ofpage2 {
+    background-image: url(../images/bgofpage2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.padding {
+    padding: 0 16rem;
+}
+
+/* <-------page2-section2---------> */
+
+.since h3 {
+    font-size: 60px;
+    line-height: 90px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 500;
+    font-family: "Oswald";
+}
+
+.since p {
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 35px;
+    color: #666666;
+    font-weight: 300;
+    font-family: "Oswald";
+}
+
+.bg-card2 {
+    background-color: #f2f2f2 !important;
+}
+
+.card {
+    cursor: pointer;
+    /* padding: 10px 0; */
+}
+
+.round_icons img {
+    transition: all 0.3s;
+    transform: scale(0.9);
+}
+
+.card:hover .round_icons img {
+    transform: scale(1.1);
+}
+
+.card-title2 h4 {
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 500;
+    font-family: "Oswald";
+    text-align: center;
+}
+
+.card-button {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.card-button a {
+    color: #fff;
+}
+
+.padding-card1 {
+    padding: 3rem;
+}
+
+.padding-card2 {
+    padding: 2rem;
+}
+
+.padding-card3 {
+    padding: 1rem 3rem;
+}
+
+.round_icons {
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* <-------page2-section3---------> */
+.bg-form1 {
+    background-color: #f2f2f2;
+    margin: auto 15px;
+
+}
+
+.align-item-baseline {
+    align-items: baseline;
+}
+
+.bg-form2 {
+    background-color: #2876e4;
+    padding: 70px 0;
+}
+
+.col-form {
+    width: 48% !important;
+    /* margin: 20px ; */
+    margin: 0px 0px 0px 14px;
+}
+
+.bg-form-width {
+    width: 80%;
+    margin: 0 auto;
+}
+
+input {
+    width: 100%;
+}
+
+.input {
+    padding: 10px 0;
+}
+
+.form h3 {
+    padding: 20px 0;
+}
+
+.bg-form-width {
+    width: 70%;
+}
+
+.btn-form {
+    background-color: #e19a00;
+    margin: 20px 0;
+}
+
+.btn-form a {
+    color: #fff;
+}
+
+/* <-------page2-section4---------> */
+.bg_sec4-page2 {
+    background-image: url(../images/learn\ bg.png);
+}
+
+.what-u-learn h3 {
+    font-size: 60px;
+    line-height: 90px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Oswald";
+    padding: 20px 0;
+}
+
+.learn_info {
+    padding: 10px 130px 20px 5px;
+}
+
+.learn_info p {
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 25px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Oswald";
+}
+
+.ext-padding {
+    padding: 10px 85px 20px 85px;
+}
+
+/* <-------page2-section5---------> */
+.styl-card {
+    text-transform: uppercase;
+    color: #000000;
+    font-family: "Oswald";
+    border: none !important;
+
+}
+
+.styl-card h5 {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 25px;
+}
+
+.styl-card p {
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 30px;
+    color: #666666;
+    font-weight: 300;
+}
+
+/* <-------page2-section6---------> */
+.bg_slider2 {
+    background-color: #cacbcc;
+}
+
+.text-black p {
+    color: #000 !important;
+}
+
+/* <--------Media Quary-----------> */
+
+@media screen and (max-width:1440px) {
+
+    /* sec4 */
+    .wrapper-card {
+        width: 1410px;
+    }
+}
+
+
+@media screen and (max-width:1300px) {
+
+    /* sec1 */
+    .text-des {
+        padding-right: 48px;
+    }
+
+    /* sec4 */
+    .wrapper-card {
+        width: 1260px;
+    }
+
+    /* <-----LifeCertification------> */
+    .padding {
+        padding: 0 9rem;
+    }
+
+    .padding-card3 {
+        padding: 0 3rem;
+    }
+}
+
+
+@media screen and (max-width:1200px) {
+
+    /* navbar */
+    .logo img {
+        width: 50% !important;
+    }
+
+    .text-des {
+        font-size: 25px;
+        /* text-align: end; */
+        padding-right: 30px;
+    }
+
+    .nav-link {
+        font-size: 13px !important;
+    }
+
+    /* sec1 */
+    .sign-up {
+        font-size: 26px;
+    }
+
+    /* sec2 */
+    .lorem p {
+        width: 450px;
+        font-size: 18px;
+    }
+
+    /* sec4 */
+    .wrapper-card {
+        width: 1000px;
+        padding: 0 10px;
+    }
+
+    .card-title {
+        width: 81%;
+    }
+
+    /* sec5 */
+    .card3 {
+        width: 900px;
+        margin: 0 auto;
+    }
+
+    .slider_contents p {
+        font-size: 25px;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 6% !important;
+    }
+
+    /* footer */
+    .blog_content p {
+        font-size: 14px;
+        padding-left: 1.5rem;
+    }
+
+    /* <-----LifeCertification------> */
+    .padding {
+        padding: 0 9rem;
+    }
+
+    .padding-card3 {
+        padding: 1rem 3rem;
+    }
+
+    .since h3 {
+        font-size: 52px;
+    }
+
+    /* page2sec4 */
+
+    .learn_info {
+        padding: 10px 15px 20px 5px;
+    }
+
+    .ext-padding {
+        padding: 10px 6px 20px 6px;
+
+    }
+
+}
+
+
+
+@media screen and (max-width:1023px) {
+
+    .rev-pad {
+        padding: 0;
+    }
+
+    .section-padding {
+        padding: 27px 0;
+    }
+
+    /* navbar */
+    .logo {
+        top: 0;
+    }
+
+    .navbar-toggler {
+        background-color: #fff;
+        margin-left: auto;
+    }
+
+    .text-des {
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .nav-link {
+        text-align: center;
+    }
+
+    /* sec1 */
+    .sign-up {
+        font-size: 20px;
+    }
+
+    .button a {
+        padding: 17px 18px;
+    }
+
+    /* sec2 */
+    .lorem h3 {
+        width: 100%;
+        font-size: 50px;
+    }
+
+    .lorem p {
+        width: 100%;
+    }
+
+    /* sec3 */
+    .life_coach h3 {
+        font-size: 45px;
+        line-height: 40px;
+    }
+
+    .life_coach p {
+        font-size: 18px;
+    }
+
+    /* sec4 */
+    .wrapper-card {
+        width: 750px;
+        padding: 0 10px;
+    }
+
+    .card3 {
+        width: 750px;
+        margin: 0 auto;
+    }
+
+    .cust-card {
+        padding: 13px 0;
+    }
+
+    .slider_contents p {
+        font-size: 25px;
+        line-height: 38px;
+    }
+
+
+    /* sec6 */
+    .change_life h4 {
+        font-size: 35px;
+    }
+
+    /* footer */
+    .txt-center {
+        text-align: center;
+    }
+
+    .quick_links ul {
+        width: 60%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .mr-right {
+        margin-right: auto;
+    }
+
+    .blog_content p {
+        font-size: 17px;
+    }
+
+    /* <-----LifeCertification------> */
+    .padding {
+        padding: 0 2.5rem;
+    }
+
+    .padding-card2 {
+        padding: 2.6rem;
+    }
+
+    .since h3 {
+        font-size: 45px;
+        line-height: 70px;
+    }
+
+    .since p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    /* page2sec4 */
+    .what-u-learn h3 {
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    .learn_info {
+        padding: 10px 15px 0px 5px;
+        line-height: 23px;
+    }
+
+    /* page2sec5 */
+    .styl-card h5 {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .styl-card p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    /* navbar */
+    .logo {
+        top: -15px;
+        left: 20px;
+    }
+
+    .text-des {
+        font-size: 21px;
+    }
+
+
+    /* sec1 */
+    .sign-up {
+        font-size: 14px;
+    }
+
+    .button a {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* sec2 */
+    .lorem h3,
+    .lorem p {
+        width: 100%;
+    }
+
+    .lorem h3 {
+        font-size: 35px;
+    }
+
+    /* sec3 */
+    .life_coach h3 {
+        font-size: 34px;
+    }
+
+    .life_coach p {
+        font-size: 16px;
+    }
+
+    /* sec4 */
+    .wrapper-card {
+        width: 100%;
+    }
+
+
+    /* sec5 */
+
+    .card3 {
+        width: 90%;
+    }
+
+    .slider_contents p {
+        font-size: 22px;
+        line-height: 31px;
+    }
+
+    .custmor h3 {
+        font-size: 20px;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        display: none !important;
+        width: 0;
+    }
+
+    .change_life p {
+        padding: 0;
+    }
+
+    .change_life h4 {
+        font-size: 27px;
+    }
+
+    /* footer */
+
+    .blog_img {
+        width: 40%;
+        padding: 5px 0;
+    }
+
+    .txt-center {
+        text-align: left;
+    }
+
+    .quick_links ul {
+        width: 100%;
+    }
+
+    /* <-----LifeCertification------> */
+    .padding {
+        padding: 0rem;
+    }
+
+    .since h3 {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .since p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .col-form {
+        width: 100% !important;
+        margin: 20px auto;
+    }
+    .learn_info p {
+        font-size: 19px;
+    }
+
+}
+
+
+@media screen and (max-width:479px) {
+
+    .section-padding {
+        padding: 15px 0;
+    }
+
+    /* navbar */
+    .logo {
+        width: 65%;
+        top: -15px;
+        left: 20px;
+    }
+
+    .text-des {
+        font-size: 17px;
+        padding: 45px 0px 0px 50px;
+    }
+
+    /* sec1 */
+    .sign-up {
+        font-size: 14px;
+    }
+
+    .button a {
+        padding: 9px 6px;
+        font-size: 10px;
+    }
+
+    /* sec2 */
+    .lorem h3,
+    .lorem p {
+        width: 100%;
+    }
+
+    .lorem h3 {
+        font-size: 24px;
+        line-height: 33px;
+    }
+
+    /* sec3 */
+    .life_coach h3 {
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    .life_coach p {
+        font-size: 16px;
+    }
+
+    /* sec4 */
+    .cust-card {
+        padding: 10px 0;
+    }
+
+    .wrapper-card {
+        width: 100%;
+    }
+
+    .card-title {
+        font-size: 23px;
+        line-height: 38px;
+    }
+
+    .card-text {
+        line-height: 25px;
+    }
+
+    /* sec5 */
+
+    .card3 {
+        width: 90%;
+    }
+
+    .slider_contents p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .custmor h3 {
+        font-size: 18px;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        display: none !important;
+        width: 0;
+    }
+
+    .carousel-indicators {
+
+        bottom: -34px !important;
+    }
+
+    /* sec6 */
+    .change_life p {
+        font-size: 22px;
+        padding: 0;
+    }
+
+    .change_life h4 {
+        font-size: 24px;
+        padding: 0;
+    }
+
+    /* footer */
+
+    .blog_img {
+        width: 100%;
+    }
+
+    .blog_img img {
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    .txt-center {
+        text-align: left;
+    }
+
+    .quick_links ul {
+        width: 100%;
+    }
+
+    .social-icons i {
+        font-size: 20px;
+        padding: 0 3px;
+    }
+
+    .copy-rig p {
+        font-size: 10px;
+    }
+
+    /* <-----LifeCertification------> */
+
+    .since h3 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .since p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .padding-card1 {
+        padding: 1.8rem;
+    }
+
+    .padding-card3 {
+        padding: 1rem 3rem;
+    }
+
+    .round_icons {
+        margin: 2px auto;
+    }
+
+    /* page2sec4 */
+    .what-u-learn h3 {
+        font-size: 35px;
+        line-height: 25px;
+    }
+
+    .learn_info {
+        padding: 0;
+    }
+
+    .learn_info p {
+        font-size: 16px;
+        line-height: 21px
+    }
+
+    /* page2sec5 */
+    .styl-card h5 {
+        font-size: 16px;
+        line-height: 14px;
+    }
+
+    .btn {
+        font-size: 0.8rem !important;
+    }
+
+    .padding-card2 {
+        padding: 1.6rem;
+    }
+    .card-title2 h4{
+        font-size: 18px;
+    }
+}
